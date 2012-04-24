@@ -10,7 +10,18 @@ import models.*;
 public class Application extends Controller {
 
     public static void index() {
-        render();
+        List<Translation> translations = allTranslations();
+        render( translations );
+    }
+
+    public static void listMessagesInJson()
+    { 
+      renderJSON( allTranslations() );
+    }
+    
+    private static List<Translation> allTranslations()
+    {
+        return Translation.findAll();
     }
 
 }
