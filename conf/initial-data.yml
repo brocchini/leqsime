@@ -1,0 +1,38 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data.yml")
+
+KeyPrefix(kp1):
+  prefix: XAK
+
+KeyPrefix(kp2):
+  prefix: java.sql.SQLException
+
+KeyPrefix(kp3):
+  prefix: com.foo.SecurityException
+   
+Translation(em1):
+  key: XAK_PERSON_LOGIN
+  type: D
+  message: This login has been taken.
+   
+Translation(em2):
+  key: XAK_PERSON_LOGIN
+  type: S
+  message: Please choose a different login.
+
+Translation(em3):
+  key: java.sql.SQLException
+  type: D
+  message: Oops, database is too busy. 
+
+Translation(em4):
+  key: com.foo.SecurityException
+  type: D
+  message: Wrong login or password. 
+   
+Translation(em5):
+  key: com.foo.SecurityException
+  type: S
+  message: Please try again. 
+   
+   

@@ -1,0 +1,56 @@
+html, body {
+    background: #364B66 !important;
+    font-family: Helvetica, Arial, Sans !important;
+}
+
+body {
+    width: 900px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.title {
+    background: #B8C569;
+    padding: 10px 20px 20px 10px;
+    margin: 10px 0;
+    color: #364B66;
+    position: relative;
+    font-size: 24px;
+    -webkit-border-radius: 16px;
+    -webkit-box-shadow: 0 2px 0 #93A045;
+    -moz-border-radius: 16px;
+}
+
+
+.allmessages {
+    background: #314660;
+    background: -webkit-gradient(linear, left top, left 30%, from(#314660), to(#364B66));
+    color: #FF0000;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    padding: 20px;
+}
+
+
+
+.message .message-key  {
+    font-size: 14px;
+    color: #F5C2CC;
+    text-decoration: none;
+}
+
+
+.message .message-type  {
+    color: #9FA85D;
+}
+
+.message .message-content {
+    position: relative;
+    background: #fff;
+    color: #0000FF;
+    padding: 10px;
+    margin: 10px 0 50px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow: 0 2px 0 #BBBBBB;
+}
