@@ -1,6 +1,0 @@
-*{ Display an translation message }*
-<div class="message">
-	key <span class="message-key"> ${_translation.key},</span>
-	<span class="message-type">  ${_translation.type == 'D' ? 'Diagnostic': 'Solution'} </span>
-	<div class="message-content">${_translation.message.escape().nl2br()}</div>
-</div>
