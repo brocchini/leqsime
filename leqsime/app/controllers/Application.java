@@ -14,14 +14,18 @@ public class Application extends Controller {
         render( translations );
     }
 
-    public static void listMessagesInJson()
+    public static void listTranslationsInJson()
     { 
       renderJSON( allTranslations() );
     }
     
     private static List<Translation> allTranslations()
     {
-        return Translation.findAll();
+      return Translation.findAll();
     }
 
+    public static void translateMessageAsText(String sourceText)
+    { 
+      renderText( Translation.translate( sourceText ) );
+    }
 }

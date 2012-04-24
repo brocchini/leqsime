@@ -50,11 +50,11 @@ public class Translation extends Model
       return "";
     }
     
-    Translation message = Translation.find( "byKey", key )
+    Translation translation = Translation.find( "byKey", key )
       .first();
-    if( message != null )
+    if( translation != null )
     {
-      return message.message;
+      return translation.message;
     }
     return "";
   }

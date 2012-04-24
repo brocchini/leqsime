@@ -5,7 +5,9 @@
 # Home page
 GET     /                                       Application.index
 
-*     /admin           module:crud
+*     /admin                                    module:crud
+
+GET   /translation/txt/{sourceText}             Application.translateMessageAsText
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
